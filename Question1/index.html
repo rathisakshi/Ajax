@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question1</title>
+    <link rel="stylesheet" href="Question1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#update").click(function () {
+                var newtext = $("#newtext").val();
+                $.ajax({
+                    type: "POST",
+                    url: "1.php",
+                    data: { newtext: newtext },
+                    success: function (result) {
+                        $("#para1").html(result);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="para1">Original Paragraph</p>
+    <label for="newtext">Enter New Text :</label><br><br>
+    <textarea id="newtext" name="newtext"></textarea>
+    <br>
+    <button id="update">Update Paragraph</button>
+</body>
+
+</html>

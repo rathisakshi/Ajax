@@ -1,0 +1,23 @@
+
+td,
+th {
+    text-align: center;
+    width: 200px;
+}
+
+.table {
+    margin-left: 190px;
+}
+
+#heading{
+    margin-left: 580px;
+}
+
+
+h2 {
+    margin-left: 420px;
+}
+
+.table tr:nth-child(even) {
+    background-color: aquamarine;
+}

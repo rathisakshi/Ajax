@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Question2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#sort').click(function () {
+                $.ajax({
+                    url: '2.php',
+                    type: 'POST',
+                    data: { keywords: $('#keyword-list li').toArray().map(function (li) { return li.innerText; }) },
+                    success: function (sortedKeywords) {
+                        // Replace the unsorted list with the sorted list returned by the server
+                        $('#keyword-list').html(sortedKeywords);
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1>Keyword Sorting</h1>
+    <button id="sort">Sort Keywords</button>
+    <ul id="keyword-list">
+        <li>sakshi</li>
+        <li>manoli</li>
+        <li>sudhanshu</li>
+        <li>urmi</li>
+        <li>ankit</li>
+    </ul>
+</body>
+
+</html>
