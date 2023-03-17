@@ -1,0 +1,143 @@
+
+.container{
+    text-align: center;
+
+}
+.container label{
+    padding: 1%;
+    width: 50px;
+    background:  #04AA6D;
+    color: white;
+    font-size: large;
+    margin-left: 1%;
+}
+.container input{
+    font-size: large;
+    background: white;
+    padding: 0.75%;
+}
+#submit{
+    width: 10%;
+    padding: 1%;
+    margin-top: 2%;
+    background-color:lightgray;
+    color: black;
+    margin-left: 8%;
+}
+
+input[type='submit']:hover {
+    background-color: #ddd;
+  }
+  
+
+  table {
+    /* border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 13px;
+    max-width: 500px;
+    word-break: break-all;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color:#04AA6D;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {background-color: #ddd;}
+
+  
+  h1 {
+    text-align: center;
+  }
+  
+  a .button {
+    background-color: #7a4c4c;
+    border: none;
+    color: rgb(228, 199, 178);
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 80px;
+    cursor: pointer;
+  }
+  
+  .btncenter {
+    display: flex;
+    justify-content: center;
+  }
+  
+  tbody {
+    max-width: 40px;
+    word-break: break-all;
+  }
+  
+  .up {
+    color: black !important;
+    background: none !important;
+    /* margin: 21px 9px 10px 0px !important; */
+    /* position: absolute !important; */
+  }
+  
+  .down {
+    color: black !important;
+    background: none !important;
+    /* margin: 21px 9px 10px 0px !important;
+    position: absolute !important; */
+  }
+  
+  .arrowposition {
+    display: inline;
+  }
+  .material-icons {
+    font-size: 14px;
+  }
+  
+  .up:hover {
+    color: rgb(228, 199, 178) !important;
+    background-color: black;
+  }
+  
+  .down:hover {
+    color: rgb(228, 199, 178) !important;
+    background-color: black;
+  }
+  
+  .uprating {
+    color: black !important;
+    background: none !important;
+    /* margin: 21px 9px 10px 0px !important;
+    position: absolute !important; */
+  }
+  
+  .downrating {
+    color: black !important;
+    background: none !important;
+    /* margin: 21px 9px 10px 0px !important;
+  position: absolute !important; */
+  }
+  
+  .uprating:hover {
+    color:rgb(228, 199, 178)!important;
+    background-color: black;
+  }
+  
+  .downrating:hover {
+    color: rgb(228, 199, 178) !important;
+    background-color: black;
+  }
